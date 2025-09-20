@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagnóstico de Segurança Predial - Vértice Engenharia</title>
+    <title>Diagnóstico de Segurança Predial - MD Engenharia</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +29,7 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0">
-                    <a href="#" class="text-2xl font-bold text-slate-800">Vértice Engenharia</a>
+                    <a href="#" class="text-2xl font-bold text-slate-800">MD Engenharia</a>
                 </div>
                 <nav class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
@@ -126,7 +125,7 @@
                     <div>
                         <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Nossa Solução: Um Diagnóstico Completo e Gratuito</h2>
                         <p class="mt-4 text-lg text-slate-600">
-                            Para garantir sua total tranquilidade, oferecemos uma vistoria técnica completa, sem custo e sem compromisso. Nossa equipe de engenheiros qualificados avalia todos os aspectos vitais da segurança do seu edifício.
+                            Para garantir sua total tranquilidade, oferecemos uma vistoria técnica completa, sem custo e sem compromisso. Nossa equipe de engenheiros avalia todos os aspectos vitais da segurança do seu edifício.
                         </p>
                         <div class="mt-8 grid grid-cols-2 gap-6 text-slate-700">
                             <div class="flex items-center"><span class="text-green-500 mr-2">●</span> Acessibilidade</div>
@@ -189,8 +188,8 @@
 
     <footer class="bg-slate-900 text-slate-400">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
-            <p>&copy; 2025 Vértice Engenharia - Segurança Contínua.</p>
-            <p class="mt-2 text-sm">contato@verticeengenharia.com.br | (XX) 9XXXX-XXXX</p>
+            <p>&copy; 2025 MD Engenharia - Segurança Contínua.</p>
+            <p class="mt-2 text-sm">dacm.00@hotmail.com | (61) 99386-2269</p>
         </div>
     </footer>
 
