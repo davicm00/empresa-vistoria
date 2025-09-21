@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagnóstico de Segurança Predial - MD Engenharia</title>
+    <title>Diagnóstico de Segurança Predial - Vértice Engenharia</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -125,7 +125,7 @@
                     <div>
                         <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Nossa Solução: Um Diagnóstico Completo e Gratuito</h2>
                         <p class="mt-4 text-lg text-slate-600">
-                            Para garantir sua total tranquilidade, oferecemos uma vistoria técnica completa, sem custo e sem compromisso. Nossa equipe de engenheiros avalia todos os aspectos vitais da segurança do seu edifício.
+                            Para garantir sua total tranquilidade, oferecemos uma vistoria técnica completa, sem custo e sem compromisso. Nossa equipe de engenheiros qualificados avalia todos os aspectos vitais da segurança do seu edifício.
                         </p>
                         <div class="mt-8 grid grid-cols-2 gap-6 text-slate-700">
                             <div class="flex items-center"><span class="text-green-500 mr-2">●</span> Acessibilidade</div>
@@ -154,32 +154,37 @@
                     </p>
                     <div id="form-wrapper" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg text-left transition-all duration-500">
                         <form id="contactForm">
+                            <input type="hidden" name="access_key" value="eb867af9-4fbe-4bdc-940f-df9bdccb9f8e">
                             <div class="grid sm:grid-cols-2 gap-4 mb-4">
                                 <div>
                                     <label for="name" class="block text-sm font-bold text-slate-700 mb-1">Nome</label>
-                                    <input type="text" id="name" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                                    <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
                                 </div>
                                 <div>
                                     <label for="phone" class="block text-sm font-bold text-slate-700 mb-1">Telefone / WhatsApp</label>
-                                    <input type="tel" id="phone" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                                    <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
                                 </div>
                             </div>
                             <div class="mb-4">
                                 <label for="company" class="block text-sm font-bold text-slate-700 mb-1">Empresa / Condomínio</label>
-                                <input type="text" id="company" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                                <input type="text" id="company" name="company" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
                             </div>
                              <div class="mb-6">
                                 <label for="email" class="block text-sm font-bold text-slate-700 mb-1">E-mail de Contato</label>
-                                <input type="email" id="email" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                                <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
                             </div>
                             <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-lg text-lg transition-transform hover:scale-105">
                                 Agendar Minha Vistoria Gratuita
                             </button>
                         </form>
                     </div>
-                     <div id="thank-you" class="hidden bg-green-100 border-l-4 border-green-500 text-green-800 p-6 rounded-lg shadow-lg text-left">
-                        <h3 class="font-bold text-xl mb-2">Solicitação Recebida!</h3>
-                        <p>Obrigado pelo seu interesse. Nossa equipe de especialistas entrará em contato muito em breve para confirmar os detalhes da sua vistoria gratuita.</p>
+                    <div id="thank-you-message" class="hidden bg-green-100 border-l-4 border-green-500 text-green-700 p-6 rounded-xl shadow-lg text-left">
+                        <h4 class="font-bold text-xl mb-2">Obrigado!</h4>
+                        <p>Recebemos sua solicitação. Nossa equipe de especialistas entrará em contato em breve para confirmar o melhor dia e horário para a sua vistoria gratuita.</p>
+                    </div>
+                    <div id="error-message" class="hidden mt-4 bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded-lg shadow-lg text-left">
+                        <h4 class="font-bold">Ocorreu um erro.</h4>
+                        <p>Não foi possível enviar sua solicitação. Por favor, tente novamente ou entre em contato diretamente.</p>
                     </div>
                 </div>
             </div>
@@ -188,8 +193,8 @@
 
     <footer class="bg-slate-900 text-slate-400">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
-            <p>&copy; 2025 MD Engenharia - Segurança Contínua.</p>
-            <p class="mt-2 text-sm">dacm.00@hotmail.com | (61) 99386-2269</p>
+            <p>&copy; 2025 Vértice Engenharia - Segurança Contínua.</p>
+            <p class="mt-2 text-sm">davicm00@gmail.com | (61) 99386-2269</p>
         </div>
     </footer>
 
@@ -251,14 +256,63 @@
              observer.observe(counterElement);
         }
 
-        const contactForm = document.getElementById('contactForm');
+        const form = document.getElementById('contactForm');
         const formWrapper = document.getElementById('form-wrapper');
-        const thankYouMessage = document.getElementById('thank-you');
+        const thankYouMessage = document.getElementById('thank-you-message');
+        const errorMessage = document.getElementById('error-message');
+        const submitButton = form.querySelector('button[type="submit"]');
 
-        contactForm.addEventListener('submit', (e) => {
+        form.addEventListener('submit', function (e) {
             e.preventDefault();
-            formWrapper.classList.add('hidden');
-            thankYouMessage.classList.remove('hidden');
+            
+            // ATENÇÃO: Substitua 'YOUR_ACCESS_KEY_HERE' no campo 'hidden' do formulário.
+            // Siga as instruções no arquivo instrucoes_email.md
+            const accessKeyInput = form.querySelector('input[name="access_key"]');
+            if (accessKeyInput.value === "YOUR_ACCESS_KEY_HERE") {
+                errorMessage.querySelector('p').textContent = "A chave de acesso do formulário não foi configurada.";
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData.entries());
+            object.subject = `Nova Solicitação de Vistoria - ${object.company || 'Contato Site'}`;
+            object.from_name = "Site Vértice Engenharia";
+            const json = JSON.stringify(object);
+
+            const originalButtonText = submitButton.innerHTML;
+            submitButton.innerHTML = 'Enviando...';
+            submitButton.disabled = true;
+            errorMessage.classList.add('hidden');
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let jsonResponse = await response.json();
+                if (response.status == 200) {
+                    formWrapper.classList.add('hidden');
+                    thankYouMessage.classList.remove('hidden');
+                } else {
+                    console.error(jsonResponse);
+                    errorMessage.querySelector('p').textContent = jsonResponse.message || "Não foi possível enviar sua solicitação. Tente novamente.";
+                    errorMessage.classList.remove('hidden');
+                    submitButton.innerHTML = originalButtonText;
+                    submitButton.disabled = false;
+                }
+            })
+            .catch(error => {
+                console.error(error);
+                errorMessage.querySelector('p').textContent = "Ocorreu um erro de rede. Verifique sua conexão e tente novamente.";
+                errorMessage.classList.remove('hidden');
+                submitButton.innerHTML = originalButtonText;
+                submitButton.disabled = false;
+            });
         });
 
     });
