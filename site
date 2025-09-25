@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagnóstico de Segurança Predial - Vértice Engenharia</title>
+    <title>Diagnóstico de Segurança Predial - MD Engenharia</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -265,10 +265,10 @@
         form.addEventListener('submit', function (e) {
             e.preventDefault();
             
-            // ATENÇÃO: Substitua 'YOUR_ACCESS_KEY_HERE' no campo 'hidden' do formulário.
+            // ATENÇÃO: Substitua 'eb867af9-4fbe-4bdc-940f-df9bdccb9f8e' no campo 'hidden' do formulário.
             // Siga as instruções no arquivo instrucoes_email.md
             const accessKeyInput = form.querySelector('input[name="access_key"]');
-            if (accessKeyInput.value === "YOUR_ACCESS_KEY_HERE") {
+            if (accessKeyInput.value === "eb867af9-4fbe-4bdc-940f-df9bdccb9f8e") {
                 errorMessage.querySelector('p').textContent = "A chave de acesso do formulário não foi configurada.";
                 errorMessage.classList.remove('hidden');
                 return;
