@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagnóstico de Segurança Predial - Vértice Engenharia</title>
+    <title>Diagnóstico de Segurança Predial - MD Engenharia</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -193,7 +193,7 @@
 
     <footer class="bg-slate-900 text-slate-400">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
-            <p>&copy; 2025 Vértice Engenharia - Segurança Contínua.</p>
+            <p>&copy; 2025 MD Engenharia - Segurança Contínua.</p>
             <p class="mt-2 text-sm">davicm00@gmail.com | (61) 99386-2269</p>
         </div>
     </footer>
